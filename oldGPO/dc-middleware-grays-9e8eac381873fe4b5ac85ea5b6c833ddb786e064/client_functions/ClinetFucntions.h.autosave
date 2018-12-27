@@ -1,0 +1,21 @@
+#ifndef FUNCTIONS_H
+#define FUNCTIONS_H
+#include <string>
+#include <string>
+#include <iostream>
+#include <boost/array.hpp>
+#include <boost/asio.hpp>
+#include <fstream>
+#include <vector>
+#include <boost/filesystem.hpp>
+#include <boost/filesystem/fstream.hpp>
+#include <boost/thread/thread.hpp>
+namespace clientFunctions
+{
+bool iAmOk( char targetIp ); // сообщаем сереверу, что клиент подключен
+std::string giveMeSomething( char targetIp ); // просим задание у сервера
+boost::asio::ip::tcp::socket  nakeConnetction();
+int getFile(int argc, char* argv[]);
+}
+#endif // FUNCTIONS_H
+x
